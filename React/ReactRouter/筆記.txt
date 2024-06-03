@@ -1,0 +1,27 @@
+React Router Basic示範
+https://v5.reactrouter.com/web/example/basic
+
+npm install -D react-router-dom
+npm install react-scripts
+
+React Router更新拉
+https://ithelp.ithome.com.tw/articles/10282773
+https://molly1024.medium.com/%E6%96%B0%E7%89%88-react-router-%E6%80%8E%E9%BA%BC%E7%94%A8-react-router-dom-v6-8c0624642fce
+In react-router-dom v6, "Switch" is replaced by routes "Routes". !!!!
+Switch改成Routes
+裡面的 component改成element
+useHistory 改成 useNavigate
+範例
+<Routes>
+    <Route exact path="/" element={<Home />} />
+    <Route path="/about" element={<About />} />
+    <Route path="third" element={<Third />} />
+</Routes>
+
+
+SPA網站如果直接輸入網址的話會出404錯，把他導向主頁
+喜好設定
+當遇到404時導向
+live server config -> Settings: File
+when set, serve this file(server root relative) for every 404(useful for single-page applications)
+裡面填主頁 index.html

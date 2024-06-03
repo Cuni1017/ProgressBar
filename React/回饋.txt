@@ -1,0 +1,37 @@
+老師您好，我已經看完這篇教學的所有影片了，收穫非常多，學到了ES6很多的語法像Arrow Function，Array的map, forEach, filter，Promise，Async Await等等，也學到如何用Webpack寫不同loader去打包檔案，還有最主要的React語法，雖然在學的途中有些語法可能因為更新被改掉，導致花了蠻多時間去搞清楚的，像react-router-dom的Switch變Routes和Route寫法的改變，或是react-redux的createStore變成configureStore等等。
+
+ 
+
+非常感謝老師出的這篇教學，目前我是快畢業的資工系大四學生，我不太清楚自己是不是有能力可以去找前端實習了，或著應該多找一些React教學來做繼續增加實力，像是ReactQuery, ReactRedux等等。我其實也想去學後端的技術如Java的Spring Boot或Laravel，但朋友說要就專精一項就好，請問老師有什麼建議嗎？
+
+ 
+
+最後我找到一個Bug是如果我登入以後，再登出並以無登入的情況去checkoutPage時，會自動登入上次的那個customer帳號。
+
+我認為原因應該是出在checkoutPage的customerService.setShouldBackToCheckout();還有我寫在nav的logout Link。因為新版的react-router-dom的Route好像沒有render這個方法了，我也找不到可以替代render的方法，所以我把logout功能改寫在nav裡面Logout的onClick上面，這樣感覺好像不是對的方法，nav不應該參雜其他的函式才對。
+
+我覺得應該是nav的customerService和checkoutPage的customerService不是同一個，所以當nav的customerService登出後沒有影響到checkoutPage的customerService，導致他的this.customerStorage還是原本有登入那一個。
+
+老師最後一個影片的程式碼好像把setShouldBackToCheckout的功能拔掉了，我想問如果我還是想要這個功能的話應該怎麼做才可以，已經研究了一兩天還是找不出答案，覺得好挫折。
+
+這些問題我自己也覺得好麻煩，如果老師有空的話再請幫我解答@@，謝謝
+
+這是我這個專案的github網址: https://github.com/Cuni1017/react-practice-woo老師您好，我已經看完這篇教學的所有影片了，收穫非常多，學到了ES6很多的語法像Arrow Function，Array的map, forEach, filter，Promise，Async Await等等，也學到如何用Webpack寫不同loader去打包檔案，還有最主要的React語法，雖然在學的途中有些語法可能因為更新被改掉，導致花了蠻多時間去搞清楚的，像react-router-dom的Switch變Routes和Route寫法的改變，或是react-redux的createStore變成configureStore等等。
+
+ 
+
+非常感謝老師出的這篇教學，目前我是快畢業的資工系大四學生，我不太清楚自己是不是有能力可以去找前端實習了，或著應該多找一些React教學來做繼續增加實力，像是ReactQuery, ReactRedux等等。我其實也想去學後端的技術如Java的Spring Boot或Laravel，但朋友說要就專精一項就好，請問老師有什麼建議嗎？
+
+ 
+
+最後我找到一個Bug是如果我登入以後，再登出並以無登入的情況去checkoutPage時，會自動登入上次的那個customer帳號。
+
+我認為原因應該是出在checkoutPage的customerService.setShouldBackToCheckout();還有我寫在nav的logout Link。因為新版的react-router-dom的Route好像沒有render這個方法了，我也找不到可以替代render的方法，所以我把logout功能改寫在nav裡面Logout的onClick上面，這樣感覺好像不是對的方法，nav不應該參雜其他的函式才對。
+
+我覺得應該是nav的customerService和checkoutPage的customerService不是同一個，所以當nav的customerService登出後沒有影響到checkoutPage的customerService，導致他的this.customerStorage還是原本有登入那一個。
+
+老師最後一個影片的程式碼好像把setShouldBackToCheckout的功能拔掉了，我想問如果我還是想要這個功能的話應該怎麼做才可以，已經研究了一兩天還是找不出答案，覺得好挫折。
+
+這些問題我自己也覺得好麻煩，如果老師有空的話再請幫我解答@@，謝謝
+
+這是我這個專案的github網址: https://github.com/Cuni1017/react-practice-woo

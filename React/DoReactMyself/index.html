@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="main">
+    <!-- <div id="root"></div> -->
+</body>
+<script>
+    let root = {
+        node: 'div',
+        attributes: {
+            id: 'root',
+            name: 'title',
+        },
+        content: 'myContent',
+    }
+
+    let PB = {
+        createElement({ node, attributes, content }) {
+            let newElement = document.createElement(node)
+            // console.log(Object.keys(attributes))
+            Object.keys(attributes).forEach((key) => {
+                const value = attributes[key]
+                newElement.setAttribute(key, value)
+            })
+            newElement.innerHTML = content
+            return newElement
+        }
+    }
+
+    let main = document.getElementById('main')
+    let div = PB.createElement(root)
+    main.append(div)
+
+</script>
+
+</html>

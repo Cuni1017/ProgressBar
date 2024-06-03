@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6a884c95-401e-465c-8620-8422eb849719" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/React/react-practice-woo/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/react-practice-woo/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/react-practice-woo/src/models/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/react-practice-woo/src/models/model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/react-practice-woo/src/services/customerService.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/react-practice-woo/src/services/customerService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/react-practice-woo/src/view/layout/nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/React/react-practice-woo/src/view/layout/nav.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-store/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-store/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-store/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-store/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-store/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/react-store/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-store/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-store/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-store/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-store/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-store/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-store/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-store/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-store/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-store/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-store/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-store/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-store/src/setupTests.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/React/react-practice-woo" />
+  </component>
+  <component name="ProjectId" id="2ON36QpGe0YJeutELbxkf0gfaOA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/H270/Downloads/WEB/PCCUResume/server",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a884c95-401e-465c-8620-8422eb849719" name="Changes" comment="" />
+      <created>1681387036701</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681387036701</updated>
+      <workItem from="1681387037985" duration="6000" />
+    </task>
+    <servers />
+  </component>
+</project>

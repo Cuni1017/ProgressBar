@@ -1,0 +1,13 @@
+{
+    "id" :1,
+    "name":"ProgressBar",
+    "email":"demo.progressbartw@gmail.com"
+    ,
+    "description": "一些描述 一些描述 一些描述, 一些描述",
+    "videos":{
+        "likes":[
+            "https://www.youtube.com/embed/Ut45bpfqFjY",
+            "https://www.youtube.com/embed/Nnzt6_ISbOk"
+        ]
+    }
+}

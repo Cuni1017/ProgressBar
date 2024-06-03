@@ -1,0 +1,4 @@
+npm install @reduxjs/toolkit react-redux redux
+
+出現hook錯誤 請先她媽檢查有沒有載好react-dom 
+白癡錯誤提示

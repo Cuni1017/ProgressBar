@@ -1,0 +1,54 @@
+#useRoutes: 要很複雜的路由在使用吧
+routes/AppRoutes.jsx打開來看==
+AppRouting = useRoutes(AppRoutes)
+BrowserRouter裡面直接放{AppRouting}就好
+
+#useLocation: 取得現在路徑的很多資訊
+如
+pathname
+search ?123
+hash #456
+state //也可以接Link傳的State 
+
+location = useLocation()
+console.log(location)
+
+#useParams: 拿path="/:後的東西" 可以很多個/: 
+params = useParams();
+
+#useOutletContext: 
+這個應該要有巢狀的Route才需要
+
+父:
+在layout裡面要使用<Outlet />時可以傳context給他
+<Outlet context={{ name: "Outlet context" }} />
+
+子:
+chidren可以用useOutletContext接想要傳的{}
+const outletContext = useOutletContext();
+console.log(outletContext)
+
+#useSearchParams: 網址上的?後面的東西可以用這個取得，如?id=12
+    const [searchParams,what] = useSearchParams()
+    一定要用[]接第一個回傳的 因為useSearchParams()會回傳兩個東西
+
+
+#useNavigate: 轉址，在404NotFound 可以利用useEffect設定一個setTimeout，幾秒後返回首頁等等
+    const navigate = useNavigate()
+    useEffect(()=>{
+        const backTimeout = setTimeout(()=>{
+            navigate("/")
+        },5000)
+
+        return () => {
+          clearTimeout(BackTimeout);
+        };
+    },[])
+    navigate("/")
+
+#在Route裡面加replace時，使用者點擊他時會"替換掉"瀏覽器的history，而"不是增加"上去
+可以用在使用者登入那邊，讓他不會登入後又返回登入頁面
+<Route path="?" replace/>
+
+#<Outlet />
+他必須在父路由使用去渲染匹配到的子路由元件

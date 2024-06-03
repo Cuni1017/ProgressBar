@@ -1,0 +1,34 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+body{
+  background-color: #1c1c1c;
+}
+
+nav {
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+nav span {
+  cursor: pointer;
+}
+
+nav span a {
+  color: #fff;
+}
+
+nav span a:hover {
+  color: rgb(225, 225, 225);
+}
+
+.myActiveStyle {
+  text-decoration: underline;
+}
+
+h1{
+  color: #fff;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/main.js" defer></script>
+  <!-- #24 fetch 實作 -->
+  <!-- <script src="js/fetch/02_fetch_data.js"></script> -->
+  <!-- #21 初探XMLHttpRequest Ajax 改寫成Promise版本 -->
+  <!-- <script src="js/XMLHttpRequest.js"></script> -->
+  <!-- <script src="js/XMLHttpRequestPromiseVersion.js"></script> -->
+  <!-- #18 解決回call地獄的各種方式 #19 Promise #20 Promise.all -->
+  <!-- <script src="js/Promise/issue.js"></script> 有問題的 -->
+  <!-- <script src="js/Promise/callback.js"></script> 方式一 -->
+  <!-- <script src="js/Promise/event_handler_recrusive.js"></script> 方式二 -->
+  <!-- <script src="js/Promise/event_handler_with_params.js"></script> 方式三 較難 -->
+  <!-- <script src="js/Promise/promise.js"></script> 方式四 Promise -->
+  <!-- <script src="js/Promise/promiseAll.js"></script> -->
+  <!-- <script src="js/Promise/test.js"></script> -->
+  <!-- 自己亂測 -->
+  <!-- #15 Script async 與 defer 的非同步使用-->
+  <!-- <script src="js/Script_type/normal.js"></script>
+    <script src="js/Script_type/testasyncjs.js" async></script>
+    <script src="js/Script_type/deferjs.js" defer></script> -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"
+    defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"
+    defer></script>
+
+
+</head>
+
+<body>
+  <div id="root">
+    <h1>ProgressBar</h1>
+  </div>
+</body>
+<script>
+    // #21 舊寫法
+    // sendXHR(
+    //     "http://127.0.0.1:5500/ES6/json/user.json",
+    //     (result) => {
+    //         console.log(result)
+    //     }, (statusCode) => {
+    //         console.log("Failed" + statusCode)
+    //     }
+    // )
+
+    // #21 Promise版本
+    // sendXHRPromiseVer(
+    //     "http://127.0.0.1:5500/ES6/json/user.json",
+    // ).then((result) => {
+    //     console.log(result.result)
+    // }).catch((result) => {
+    //     console.log("failed:" + result.statusCode)
+    // })
+
+
+</script>
+
+</html>

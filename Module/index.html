@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="js/Tool.js"></script> -->
+    <!-- <script src="js/App.js"></script> -->
+    <script type="module" src="js/App.js"></script>
+</head>
+
+<body>
+    <!-- 正確做法 -->
+    <!-- 如果要用import export就要加 type="module" -->
+    <script type="module">
+        // import App from './js/App.js'
+        // import {
+        //   pi,
+        //   sum,
+        // } from './js/Tool.js'
+        // import aaa from "./js/Tool.js"
+
+        // #方式一 個別接其他export，且名稱不能錯
+        // import xxx, { pi, sum, bbb } from './js/Tool.js';
+        // {
+        //     console.log(pi)
+        //     console.log("2𝝿 = " + 2 * pi)
+        //     console.log(xxx)
+        //     console.log(bbb)
+        // }
+        // #方式二 用 * 接除了default其他全部export
+        import defaultFunc, * as tool from './js/Tool.js'
+        {
+            console.log(defaultFunc(11))
+            console.log(tool.pi)
+            console.log("2𝝿 = " + 2 * tool.pi)
+            console.log(tool.bbb)
+            tool.echo("MikeLiu Is My Dog")
+        }
+        import ppA from './js/App.js' //是default的話可以直接import，名稱也可換
+        const app = new ppA()
+        // import { App } from './js/App.js' //如果不是default的話要用{}包起來，且名稱不能換
+        // const app = new App()
+    </script>
+
+    <script>
+    // 耦合性
+    // https://zh.m.wikipedia.org/zh-tw/%E8%80%A6%E5%90%88%E6%80%A7_(%E8%A8%88%E7%AE%97%E6%A9%9F%E7%A7%91%E5%AD%B8)
+    // 只調用app內的東西，拆分Tool時會比較單純，如果都一起include進來，做出來的Class可能會產生出兩個甚至三種以上目的，拆分較困難
+    // const app = new App()
+    // const tool = new Tool()
+    </script>
+</body>
+
+</html>
